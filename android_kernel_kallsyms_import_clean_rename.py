@@ -83,11 +83,11 @@ for vaddr, funcNames in functionTable.items():
 	idaapi.auto_make_proc(vaddr)
 
 	# Label in IDA
-	idaapi.set_name(vaddr, funcNames[0])
+	idaapi.set_name(vaddr, "")
 
 for vaddr, dataNames in dataTable.items():
 	# Label in IDA
-	idaapi.set_name(vaddr, dataNames[0])
+	idaapi.set_name(vaddr, "")
 
 endTime = time.perf_counter()
 
